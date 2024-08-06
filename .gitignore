@@ -51,3 +51,7 @@ prereqs/dcap/*.deb
 prereqs/nuget/*
 prereqs/packages/.packages
 prereqs/sgx-driver/*.bin
+
+# Ignore symbolic links (tentative)
+3rdparty/optee/optee_os
+3rdparty/optee/optee_client
