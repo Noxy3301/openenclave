@@ -46,7 +46,7 @@ set(OE_TZ_TA_DEV_KIT_LINKER_SCRIPT_TEMPLATE ${OE_TA_DEV_KIT_DIR}/src/ta.ld.S)
 set(OE_TZ_TA_DEV_KIT_HEADER_SOURCE ${OE_TA_DEV_KIT_DIR}/src/user_ta_header.c)
 set(OE_TZ_TA_DEV_KIT_DEFAULT_SIGNING_KEY
     ${OE_TA_DEV_KIT_DIR}/keys/default_ta.pem)
-set(OE_TZ_TA_DEV_KIT_SIGN_TOOL ${OE_TA_DEV_KIT_DIR}/scripts/sign.py)
+set(OE_TZ_TA_DEV_KIT_SIGN_TOOL ${OE_TA_DEV_KIT_DIR}/scripts/sign_encrypt.py)
 
 # Path to OP-TEE OS.
 set(OE_TZ_OPTEE_SRC ${PROJECT_SOURCE_DIR}/3rdparty/optee/optee_os)

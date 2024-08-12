@@ -390,8 +390,8 @@ macro (add_enclave_optee)
   add_custom_target(
     ${ENCLAVE_TARGET}.ta ALL
     COMMAND
-      ${OE_TZ_TA_DEV_KIT_SIGN_TOOL} --key ${ENCLAVE_KEY} --uuid ${ENCLAVE_UUID}
-      --version 0 --in
+      ${OE_TZ_TA_DEV_KIT_SIGN_TOOL} sign-enc --key ${ENCLAVE_KEY} --uuid ${ENCLAVE_UUID}
+      --ta-version 0 --in
       $<TARGET_FILE_DIR:${ENCLAVE_TARGET}>/${ENCLAVE_UUID}.stripped.elf --out
       $<TARGET_FILE_DIR:${ENCLAVE_TARGET}>/${ENCLAVE_UUID}.ta
     BYPRODUCTS $<TARGET_FILE_DIR:${ENCLAVE_TARGET}>/${ENCLAVE_UUID}.ta)
