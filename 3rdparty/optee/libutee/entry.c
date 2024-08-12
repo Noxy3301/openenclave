@@ -28,5 +28,5 @@ void __noreturn __ta_entry(
     TEE_Result res = TEE_SUCCESS;
 
     res = __utee_entry(func, session_id, up, cmd_id);
-    utee_return(res);
+    _utee_return(res);
 }
